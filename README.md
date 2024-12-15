@@ -75,3 +75,82 @@ L- 290AZN
     </footer>
 </body>
 </html>
+console.log("Website is running!");
+alert("Welcome!");
+document.querySelector('button').addEventListener('click', () => {
+    alert('Düymə basıldı!');
+});
+<script src="script.js"></script>
+// script.js
+document.querySelector('form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Mesajınız göndərildi! Tezliklə sizinlə əlaqə saxlanılacaq.');
+});
+/* Ümumi üslublar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ana səhifə bölməsi */
+#home {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#home h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* Məhsullar bölməsi */
+#products {
+    padding: 20px;
+    text-align: left;
+}
